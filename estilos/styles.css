@@ -1,0 +1,696 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    header {
+        background-color: #fff;
+        height: 65%;
+        width: 100%;
+    }
+
+    .logo {
+        margin-left: 5%;
+    }
+
+    .menu{
+        height: 2.75em;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-desplegable{
+        width: .75em;
+        height: .75em;
+        margin-right: 5%;
+    
+    }
+
+    .abierto{
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        margin-top: -30px;
+    }
+    
+    #hamburguesa{
+        display:none;
+        
+        
+    }
+    
+    .menu-hamburguesa{
+        display: none;
+        list-style: none;
+        
+    
+    }
+    
+    .menu-desplegable input:checked ~ .menu-hamburguesa{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transform: translate(-18.75em, .31em);
+        background-color: #0000ff;
+        height: 14.06em;
+        width: 20em;
+    }
+
+    .equis{
+        position: absolute;
+        right: .1em;
+        width: 2em;
+        height: 2em;
+    }
+    .abierto{
+        position: absolute;
+        right: 1px;
+        width: 30px;
+        height: 30px;
+        opacity: 0%;
+    }
+    .menu-desplegable input:checked ~ .abierto{
+        opacity: 100%;
+        z-index: 5;
+    }
+    .botones{
+        font-family: 'IBM plex mono', sans-serif;
+        font-size: 1em;
+        line-height: 1.75em;
+    }
+
+    a.botones {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.5em;
+        margin-left: 1em;
+        text-decoration: none;
+        color: white;
+    }
+
+
+
+
+    .section1 h1{
+        font-family: 'IBM plex sans', sans-serif;
+        font-size: 2.25rem;
+        width: 13.87rem;
+        margin-left: 5%;
+    }
+    
+    .section1 p {
+        font-family: 'IBM plex mono', sans-serif;
+        font-size: 0.87rem;
+        color: #060A24;
+        margin: 5%;
+    }
+
+    .boton1 {
+        width: 18em;
+        height: 3em;
+        margin: 2.25em 0.93em 1.5em 1em;
+
+        cursor: pointer;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 1em;
+        font-weight: bold;
+        background-color: #00F3BB;
+        color: #060A24;
+        border: none;
+    }
+
+    .section2 h2 {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 2.25rem;
+        color: #ffffff;
+        margin-bottom: 1.31rem;
+        margin-left: 5%;
+    }
+
+    .section2 {
+        background-color: #0000ff;
+        width: 100%;
+        height: 79.21em;
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%);
+        display: flex;
+    }
+
+    .epiframe{
+        margin-top: 4em;
+    }
+
+    .videos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .iframe{
+        width: 18.79em;
+        height: 15.06em;
+        border: 0;
+        background: transparent;
+        margin: 1.31em 0.4em -1.32em 0.6em;   
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .phone{
+        width: 100%;
+        height: 32.43em;
+        position: relative;
+        bottom: 5.9em;
+        display: flex;
+        justify-content: center;
+        
+
+    }
+    .section3{
+        position: relative;
+        bottom: 1em;
+    } 
+    .section3 h2{
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 2.25rem;
+        width: 18rem;
+        height: 5.25rem;
+        color: #060A24;
+        margin-left: 5%;
+        margin-bottom: 1rem;
+    }
+
+    .section3 p{
+        font-family: 'IBM Plex Mono', sans-serif;
+        font-size: 0.87rem;
+        color: #060A24;
+        width: 18rem;
+        height: 15.87rem;
+        margin-left: 5%;
+        margin-top: 0.5rem;
+    }
+
+
+    .section4 h2{
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 2.25rem;
+        color: #060A24;
+        margin-left: 5%;
+        margin-bottom: 0.87rem;
+    }
+
+    .grid-item{
+        width: 100%;
+        height: 15.18em;
+        display: flex;
+    }
+
+    .section5{
+        width: 100%;
+        min-height: 8.12em;
+        display: flex;
+        flex-direction: column;
+        margin-top: 3em;
+
+        
+    }
+
+    .section5 h2 {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 2.25rem;
+        color: #060A24;
+        width: 100%;
+        height: 5.25rem;
+        padding-left: 5%;
+        margin-bottom: 1.5rem;
+    }
+
+
+
+    .icono{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 5%;
+    }
+    
+    .icono p{
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 600;
+        font-size: 1.5em;
+        color: #060A24;
+        text-align: center;
+        margin: 5%;
+    }
+
+    .section6{
+        margin-top: 4em;
+        background-color: #0000ff;
+        width: 100%;
+        height: 21.31em;
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        clip-path: polygon(100% 0%, 0% 10%, 0% 100%, 100% 100%);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .section6 h2{
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 2.25rem;
+        color: #ffffff;
+        width: 18rem;
+        height: 7.87rem;
+        margin: 5%;
+        margin-bottom: 2.25rem;
+        text-align: center;
+    }
+
+    .boton2 {
+        cursor: pointer;
+        width: 18em;
+        height: 3em;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 1em;
+        background-color: #00F3BB;
+        color: #060A24;
+        border: none;
+
+    }
+
+    footer span {
+        font-family: 'IBM Plex Mono', sans-serif;
+        color: #060a24;
+        font-size: 0.87em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 1.5em;
+        margin-left: 2.93em;
+    }
+
+    .spotify, .instagram, .twitter, .facebook, .telegram {
+        margin-left: 2.37em;
+        color: black;
+    }
+
+    .pie-icon{
+        margin-bottom: 1.93em;
+        margin-top: 1em;
+    }
+
+
+ @media screen and (min-width: 480px) { 
+   
+    .logo {
+        margin-top: 5%;
+        width: 2.5em;
+        height: 2.5em;
+    }
+    .section1 h1{
+        font-size: 2.7rem;
+        width: 25rem;
+        margin-top: 13.9%;
+    }
+    .section1 p {
+        font-size: 1.1em;
+        max-width: 39.25em;
+    }
+    .boton1 {
+        font-size: 1.3em;
+    }
+    
+    .iframe {
+        width: 28.62em;
+    }
+    
+
+    .phone{
+        width: 25em;
+        height: 45.5em;
+        bottom: 4.9em;
+    }
+    .section3{
+        bottom: 3.37em;
+    }
+    .section3 h2{
+        font-size: 2.7rem;
+        width: 25rem;
+        margin-bottom: 0rem;
+    }
+    .section3 p{
+        font-size: 1.1rem;
+        width: 24rem;
+        margin-left: 7%;
+    }
+    .section4 h2{
+        font-size: 2.7rem;
+    }
+    .grid-item{
+        height: 25em;
+    }
+    .section5 h2 {
+        font-size: 2.7rem;
+        margin-bottom: 3rem;
+    }
+
+    .icono p{
+        font-size: 2em;
+    }
+
+    .section6{
+        clip-path: polygon(100% 0%, 0% 19%, 0% 100%, 100% 100%);
+    }
+    footer span {
+        font-size: 1.1em;
+        margin-left: 5em;
+    }
+    .spotify, .instagram, .twitter, .facebook, .telegram {
+        margin-left: 4em;
+    }
+}
+
+ @media screen and (min-width: 768px) { 
+    
+    .logo {
+        margin-left: 5%;
+        width: 3em;
+        height: 3em;
+    }
+    .menu{
+        height: 5em;
+    }
+    .menu-desplegable{
+        width: 1.75em;
+    }
+
+    .equis{
+        position: absolute;
+        right: 2.5em;
+        top: 1.5em;
+    }
+    
+    .section1 h1{
+        font-size: 3.5rem;
+        width: 22rem;
+        margin-left: 8%;
+    }
+    .section1 p {
+        font-size: 1.1rem;
+        margin-left: 8%;
+    }
+    .boton1 {
+        width: 20em;
+        height: 4em;
+        margin: 2.25em 0.93em 1.5em 3.7em;
+        font-size: 1.1em;
+    }
+    .section2 h2 {
+        font-size: 3rem;
+        margin-left: 15%;
+    }
+    .section2 {
+        height: 60em;
+        clip-path: polygon(0 7%, 100% 0%, 100% 93%, 0% 100%);
+    }
+    .epiframe{
+        margin-top: 9em;
+    }
+    .iframe{
+        width: 22.5em;
+        height: 15.5em;
+    }
+
+    .phone{
+        width: 28em;
+        height: 45em;
+        bottom: 5em;
+        margin-left: 2em;
+    }
+    .section3{
+        bottom: 3.37em;
+    }
+    .section3 h2{
+        font-size: 3.5rem;
+        margin-left: 14%;
+        margin-bottom: 2.5em;
+    }
+    .section3 p{
+        font-size: 1.27rem;
+        width: 23rem;
+        height: 17rem;
+        margin-left: 40%;
+        margin-top: 5rem;
+    }
+    .box{
+        position: relative;
+        bottom: 5em;
+    }
+    .section4 h2{
+        font-size: 3.5rem;
+        margin-left: 13%;
+        margin-bottom: 1.5rem;
+    }
+    .grid-item{
+        max-width: 32em; 
+        height: 20em;
+        display: flex;
+    }
+    .imagenes {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 20em 20em 20em;
+    } 
+    .section5{
+        height: 8.12em;
+        margin-top: 3em;
+    }
+    .section5 h2 {
+        font-size: 3.5rem;
+        height: 5.25rem;
+        padding-left: 14%;
+        margin-bottom: 5rem;
+    }
+    .icono p{
+        font-size: 2.1em;
+    }
+    .iconos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+
+    .section6{
+        margin-top: 40em;
+        height: 27em;
+        clip-path: polygon(100% 0%, 0% 20%, 0% 100%, 100% 100%);
+
+    }
+    .section6 h2{
+        font-size: 3.5rem;
+        width: 23rem;
+        height: 7.9rem;
+        margin-bottom: 7rem;
+    }
+    .boton2 {
+        font-size: 1.3em;
+    }
+    footer span {
+        font-size: 1.3em;
+        margin-top: 1.5em;
+        margin-left: 10em;
+    }
+    .spotify, .instagram, .twitter, .facebook, .telegram {
+        margin-left: 7em;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+       
+    label, input{
+        display: none;
+    }
+    .menu-hamburguesa, .botones{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .logo {
+        margin: 3%;
+    }
+    a.botones {
+        line-height: 0em;
+        color: black;
+    }
+    a.botones:hover{
+        text-decoration: line-through;
+        text-decoration-color: #00f3bb;
+        color: #00f3bb;
+    }
+    a.botones:active{
+        text-decoration: line-through;
+        text-decoration-color: #060A24;
+        color: #060A24;
+    }
+    .section1 h1{
+        font-size: 4rem;
+        width: 47rem;
+        margin: 10% 0% 3% 11%;
+    }
+    .section1 span{
+        color: #0000EC;
+    }
+    .section1 p {
+        font-size: 1rem;
+        width: 50rem;
+        margin: 0% 0% 5% 11%;
+    }
+    .boton1 {
+        cursor: pointer;
+        width: 14.12em;
+        height: 3.5em;
+        margin: 3.5em 6.3em;
+        font-size: 1.125em;
+    }
+    .boton1:hover {
+        background-image: -o-linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+        background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+        color: white;
+        -webkit-transition: color 0.5s ease-in;
+        -o-transition: color 0.5s ease-in;
+        transition: color 0.5s ease-in;
+    }
+    .section2 h2 {
+        font-size: 3rem;
+        margin-left: 10%;
+    }
+    .section2 {
+        height: 70em;
+        clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    }
+    .epiframe{
+        margin: 11em .1em;
+    }
+    .iframe{
+        width: 30em;
+        height: 16.5em;
+        margin-left: 1em;
+        margin-bottom: 3em;
+    }
+    .videos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .phone{
+        width: 39em;
+        height: 50em;
+        bottom: 9em;
+    }
+    .section3{
+        position: relative;
+        bottom: 1em;
+        display: flex;
+        flex-direction: row;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .section3 h2{
+        font-size: 3rem;
+        width: 18rem;
+        margin-left: 5%;
+        margin-bottom: 1rem;
+    }
+    .section3 p{
+        font-size: 1rem;
+        width: 18rem;
+        margin-left: 5%;
+    }
+    .section4 h2{
+        font-size: 3rem;
+        margin-left: 10%;
+        margin-bottom: 1.5rem;
+    }
+    .grid-item{
+        max-width: 30em;
+        height: 20em;
+        display: flex;
+    }
+    .imagenes {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: 20em 20em;
+    }
+    .section5{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 20em;
+    }
+    .section5 h2 {
+        font-size: 3rem;
+        height: 3.25rem;
+        margin: 1rem 0rem 1.5rem 0rem;
+    }
+
+    .iconos{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .icono, .icono p{
+        display: flex;
+        justify-content: space-around;
+        max-width: 16em;
+        align-self: auto;
+    }
+    .icono{
+        margin-left: 2.5em;
+    }
+    .icono p{
+        font-size: 1.5em;
+     }
+    .section6{
+        margin-top: 0em;
+        height: 32.37em;
+        clip-path: polygon(100% 0%, 0% 25%, 0% 100%, 100% 100%);
+    }
+    .section6 h2{
+        font-size: 3rem;
+        width: 44rem;
+        height: 3.87rem;
+    }
+    .boton2 {
+        width: 21.56em;
+        height: 3.5em;
+        font-size: 1.125em;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer span {
+        font-size: 1em;
+        margin: 1em 0em 1.5em 3.25em;
+    }
+    .spotify, .instagram, .twitter, .facebook, .telegram {
+        margin-left: 2.25em;
+    }
+    .pie-icon{
+        margin: 1.5em;
+    }
+
+
+}

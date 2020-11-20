@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="imagenes/logo.svg">
+    <script src="https://kit.fontawesome.com/25bebbe2dd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="estilos/styles.css">
+    <title>podcast channel</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <img class="logo" src="./imagenes/logo.svg" alt="logo-bd">
+            <div class="menu-desplegable">
+                <input type="checkbox" id="hamburguesa" class="input"/>
+                    <label class="cerrado" for="hamburguesa">&#9776;</label>
+                    <label class="abierto" for="hamburguesa"><img src="imagenes/equis.png" class="equis" alt="equis"></label>
+                        <ul class="menu-hamburguesa">
+                            <li><a class="botones" href="#episodios">EPISODIOS</a></li>
+                            <li><a class="botones" href="#nosotros">NOSOTROS</a></li>
+                            <li><a class="botones" href="#entrevistas">ENTREVISTAS</a></li>
+                            <li><a class="botones" href="#topicos">TÓPICOS</a></li>
+                        </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="section1">
+        <h1>
+            Hello <s>world</s> pale blue dot<span>.</span>
+        </h1>
+        <p>
+            El portal de podcasts que explora el mundo de la programación y
+            la tecnología. Nuevos episodios, todos los jueves cada 15 días.
+        </p>
+        <button class="boton1">
+            <b>CONOCÉ MÁS</b>
+        </button>
+    </section>
+    <section class="section2" id="episodios">
+        <div class="epiframe">
+            <h2>
+                Episodios
+            </h2>
+            <div class="videos">
+                <iframe class="iframe " src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" allow="encrypted-media"></iframe>
+                <iframe class="iframe " src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" allow="encrypted-media"></iframe>
+                <iframe class="iframe " src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" allow="encrypted-media"></iframe>
+                <iframe class="iframe " src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" allow="encrypted-media"></iframe>
+            </div>
+        </div>
+    </section>
+    <section class="section3">
+        <img class="phone" src="./imagenes/phone.png" alt="phone">
+        <div id="nosotros" class="box">
+            <h2>
+                De dónde venimos
+            </h2>
+            <p>
+                Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.
+            <br><br>
+                Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+            </p>
+        </div>
+    </section>
+    <section class="section4" id="entrevistas">
+        <h2>
+            Invitadas/os estelares
+        </h2>
+        <div class="imagenes">
+            <img class="grid-item img1" src="./imagenes/grace-hopper.png" alt="Hopper-Grace" >
+            <img class="grid-item img2" src="./imagenes/Katie-Bouman.png" alt="Bouman-Katie">
+            <img class="grid-item img3" src="./imagenes/Margaret_Hamilton.png" alt="Hamilton-Margaret">
+            <img class="grid-item img4" src="./imagenes/Computer-in-the-1950s.png" alt="image-computer">
+            <img class="grid-item img5" src="./imagenes/Computer-operators-with-an-Eniac.png" alt="image-computer">
+            <img class="grid-item img6" src="./imagenes/susan-kare.png" alt="Susan-Kare">
+        </div>
+    </section>
+    <section class="section5">
+        <h2>
+            Algunos de nuestros temas
+        </h2>
+        <div class="iconos">
+            <div class="icono"><img src="./imagenes/icon1.svg" alt="icon1"><p>Trabajo remoto</p></div>
+            <div class="icono"><img src="./imagenes/icon2.svg" alt="icon2"><p>Repensando la programación</p></div>
+            <div class="icono"><img src="./imagenes/icon3.svg" alt="icon3"><p>Bases del código</p></div>
+            <div class="icono"><img src="./imagenes/icon4.svg" alt="icon4"><p>Seguridad informática</p></div>
+        </div>
+    </section>
+    <section class="section6" id="topicos">
+        <h2>
+            ¿Querés las últimas novedades?
+        </h2>
+        <button class="boton2"><b>ESCUCHÁ LOS EPISODIOS</b> 
+        </button>
+    </section>
+    <footer>
+        <div class="footer">
+            <span>
+                © 2019- Hello blue pale dot
+            </span>
+            <div class="pie-icon">
+                <a href="https://www.spotify.com" class="spotify" target="_blank">
+                    <i class="fab fa-spotify"></i></a>
+                    
+                <a href="https://www.instagram.com" class="instagram" target="_blank">
+                    <i class="fab fa-instagram"></i></a>
+
+                <a href="https://www.twitter.com" class="twitter" target="_blank">
+                    <i class="fab fa-twitter"></i></a>
+                    
+                <a href="https://www.facebook.com" class="facebook" target="_blank">
+                    <i class="fab fa-facebook"></i></a>
+
+                <a href="https://www.telegram.com" class="telegram" target="_blank">
+                    <i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
